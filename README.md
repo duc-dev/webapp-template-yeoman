@@ -10,6 +10,14 @@ Install gulp, yeoman and webapp template of yeoman:
 npm install --global yo gulp-cli generator-webapp
 ```
 
+## Install Dependencies
+
+This command to install the dependencies you have just updated.
+
+```bash
+npm install
+```
+
 ## Development
 
 2 Options:
