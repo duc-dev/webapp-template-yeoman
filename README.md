@@ -22,27 +22,27 @@ npm install
 
 2 Options:
 
- 1.  Run your webapp and automatically choose unvailable port:
+1.  Run your webapp and automatically choose unvailable port:
 
-     ```bash
-     npm start
-     ```
+    ```bash
+    npm start
+    ```
 
-2. Run your webapp with your custom port:
+2.  Run your webapp with your custom port:
 
-   ```bash
-   npm start -- --port="your-custom-port"
-   ```
+    ```bash
+    npm start -- --port="your-custom-port"
+    ```
 
-   Replace `"your-custom-port"` with your custom port, for example:
+    Replace `"your-custom-port"` with your custom port, for example:
 
-   ```bash
-   npm start -- --port=8080
-   ```
+    ```bash
+    npm start -- --port=8080
+    ```
 
 ## Build for production
 
-2 options:
+3 options:
 
 1. Build your webap:
 
@@ -67,5 +67,3 @@ npm install
    ```bash
    Run npm run serve:dist -- --port=5000
    ```
-
-   
