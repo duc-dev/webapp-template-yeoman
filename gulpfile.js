@@ -100,7 +100,7 @@ function lintTest() {
 }
 
 function html() {
-  return src('app/*.html')
+  return src('.tmp/*.html')
     .pipe($.useref({ searchPath: ['.tmp', 'app', '.'] }))
     .pipe($.if(/\.js$/, $.uglify({ compress: { drop_console: true } })))
     .pipe(
@@ -154,7 +154,7 @@ const build = series(
   clean,
   parallel(
     lint,
-    series(parallel(views, styles, scripts, modernizr), html),
+    series(parallel(styles, scripts, modernizr), views, html),
     images,
     fonts,
     extras
