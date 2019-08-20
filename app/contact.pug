@@ -1,12 +1,18 @@
 extends layouts/default
 
+block styles
+  link(rel="stylesheet", href="styles/contact.css")
+
 block content
   include components/header.pug
   .hero-unit
-    h1 'Allo, 'Allo!
+    h1 This is contact page!
     p You now have
     ul
       li HTML5 Boilerplate
       li Sass
       li Modernizr
       li jQuery
+
+block scripts
+  script(src="./scripts/contact.js")

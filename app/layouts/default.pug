@@ -7,9 +7,10 @@ html.no-js(lang="")
     title html
     link(rel="apple-touch-icon" href="apple-touch-icon.png")
     // Place favicon.ico in the root directory
-    // build:css styles/main.css
-    link(rel="stylesheet" href="styles/main.css")
-    // endbuild
+    block styles
+      // build:css styles/main.css
+      link(rel="stylesheet" href="styles/main.css")
+      // endbuild
     // build:js scripts/modernizr.js
     script(src="scripts/modernizr.js")
     // endbuild
@@ -41,6 +42,7 @@ html.no-js(lang="")
     // build:js scripts/vendor.js
     script(type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js")
     // endbuild
-    // build:js scripts/main.js
-    script(src="scripts/main.js")
-    // endbuild
+    block scripts
+      // build:js scripts/main.js
+      script(src="scripts/main.js")
+      // endbuild
